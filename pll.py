@@ -3,7 +3,6 @@ import math as math
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 def find_k1(BnT, zeta, K0 = 1, Kp = 1):
     rational = BnT/(zeta + 1/(4*zeta))
     num = rational * 4 * zeta
@@ -101,7 +100,7 @@ def pll(theta, k1, k2, k0):
 
 k1 = find_k1(0.05, 1/(np.sqrt(2)), 0.5)
 k2 = find_k2(0.05, 1/(np.sqrt(2)), 0.5)
-#ret = pll(np.pi, k1, k2, 1)
+ret = pll(np.pi, k1, k2, 1)
 
 # BnT = 0.05
 # zeta = 1/(np.sqrt(2))
